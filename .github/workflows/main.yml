@@ -27,7 +27,7 @@ jobs:
         run: ./gradlew build
 
       - name: 도커 이미지 빌드 # (2)
-        run: docker build -t parksunghun/demo
+        run: docker build -t parksunghun/demo .
 
       - name: Docker Hub 로그인 # (3)
         uses: docker/login-action@v2
